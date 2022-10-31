@@ -1,14 +1,14 @@
 * {
     box-sizing: border-box;
-  } /* (*means it's effect everything, but border-box everthing that's is including in it make everything is the same size regardless padding or borders */
+  } /* (*=means it's effect everything, but border-box everthing that's is including in it make everything is the same size regardless padding or borders */
   body {
     background-color: #40407a;/* background color for the website, changes color if you want to see what it will do*/
     color: #40407a;/*main color for the text, you can see how it chance at (name text 2)*/
-    /*min- and max is the website resolution size, pretty good idea changing value to what your resolution need*/
+    /*min- and max is the website resolution size, pretty good idea changing value for specific screen size*/
     min-width: 900px;
     max-width: 1600px;
     margin:0;/* the more px their are, the bigger the site is. try and changes it for the fun of it*/
-    font-family: Verdana, Arial, sans-serif;/* font type alot different option for this, try and change it*/
+    font-family: Verdana, Arial, sans-serif;/* font type alot different option for this, try and change it Times New Roman, Georgia, Garamond*/
   }
   #wrapper/* look at the box where (Head text 2)*/ {
     width: 80%; /*changing width, if you changes it to 100% it filles the whole border */
@@ -17,10 +17,10 @@
     padding: 2em;/* changing the placement for */
   }
   header/*focus gonna be at bead text 1 */ {
-    background-color: #40407a;/*background color where the invisvble header is.(head tex 1) try and see if you can find it*/
+    background-color: #40407a;/*background color where the invisvble header is.(head text 1) try and see if you can find it*/
     color: #ffffff; /*? probably another function that have parent so this doesn't work.  (head text 1) color is, changes color if you don't like white */
-    background-image: url(Img/);/*background picture for the header section, try and put your picture in*/
-    background-size: 100% 100%;/* pictures size, so if you have a picture in a folder try and changes it to a lower/ higher%*/
+    background-image: url(Img/);/*background picture for the header section, try and put a picture in*/
+    background-size: 100% 100%;/* pictures size, so if you have a picture in a folder try and changes it to a lower/ higher procent=%*/
     margin-top: 50px;/* changes the  px and you can't find the invisble header anymore since margin changes placement*/
   }
   header a {
@@ -59,14 +59,14 @@
   }
   
   nav ul {
-    list-style-type: none; /* (trouble make it work) you can changes what icon will appear infront to table like, circle, square  and so. try it out*/
+    list-style-type: none; /* ( can't make it work :( probably something do with parent and child) you can changes what icon will appear infront to table like, circle, square  and so. try it out*/
     margin: 0; /* changing placement for the marging, if you try and use 10%, it changes it's placement,*/
     padding-right: 2em; /* changing the padding right to left. Try another value and see what will happened*/
     font-size: 1.2em; /* changing font-size try out another values */
   }
   nav li {
     display: inline;/* it changes the behavior for redering box of different elements, inline have the proberty any height and width have no effects on it. try and use block and content. will recommend reading https://www.w3schools.com/CSSref/pr_class_display.php to test out all different property. Since it's hard to grasp it with on words */
-    padding-left: em;/* padding how close they are to each other, try and changes the value to 0 and 10*/
+    padding-left: 2em;/* padding how close they are to each other, try and changes the value to 0 and 10*/
   }
   nav a {
     text-decoration: none;/*decoration for the text try and put a overline or a underline, instead of none*/
@@ -89,9 +89,9 @@
     clear: both;/* It specifies what will happen next with a float element next to it, both have property it will pushed below left and right floated elements, try out none or inherit */
   }
   footer/* focus gonna be at head text 2 box*/ {
-    font-size: small;/* changing font-size try out another values. small it's another way to speficefy  */
+    font-size: small;/* changing font-size try out another values. small it's another way to speficefy it  */
     font-style: italic; /* font type alot different option for this, try and change it*/
-    text-align: center; /* placement of a property, try out left and right*/
+    text-align: center; /* placement of a property, try out using left and right*/
     clear: right; /*It specifies what will happen next with a float element next to it*/
   }
   li {
