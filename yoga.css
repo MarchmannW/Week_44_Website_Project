@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+  } /* (*means it's effect everything, but border-box everthing that's is including in it make everything is the same size regardless padding or borders */
+  body {
+    background-color: #40407a;/* background color for the website, changes color if you want to see what it will do*/
+    color: #40407a;/*main color for the text, you can see how it chance at (name text 2)*/
+    /*min- and max is the website resolution size, pretty good idea changing value to what your resolution need*/
+    min-width: 900px;
+    max-width: 1600px;
+    margin:0;/* the more px their are, the bigger the site is. try and changes it for the fun of it*/
+    font-family: Verdana, Arial, sans-serif;/* font type alot different option for this, try and change it*/
+  }
+  #wrapper/* look at the box where (Head text 2)*/ {
+    width: 80%; /*changing width, if you changes it to 100% it filles the whole border */
+    margin: auto;/* changing placement for the marging, if you try and use 10%, it changes it's placement,, Look in the img folder if you need a refence what it look like*/
+    background-color: #f5f5f5; /*background color try and changes it */
+    padding: 2em;/* changing the placement for */
+  }
+  header/*focus gonna be at bead text 1 */ {
+    background-color: #40407a;/*background color where the invisvble header is.(head tex 1) try and see if you can find it*/
+    color: #ffffff; /*? probably another function that have parent so this doesn't work.  (head text 1) color is, changes color if you don't like white */
+    background-image: url(Img/);/*background picture for the header section, try and put your picture in*/
+    background-size: 100% 100%;/* pictures size, so if you have a picture in a folder try and changes it to a lower/ higher%*/
+    margin-top: 50px;/* changes the  px and you can't find the invisble header anymore since margin changes placement*/
+  }
+  header a {
+    text-decoration: none;/* decoration for the text try and put a overline or a underline, instead of none */
+  }
+  header a:link {
+    color: #40407a;/* color for the link, changes it if you want to see what it will do*/
+  }
+  header a:visited/* if you already have visited this link it will change to this color, changes color if you want see how it works */ {
+    color: #40407a;
+  }
+  header a:hover /* hover highligtning, with a color a text when your cursor interact with it, try and changes color and hover over it */ {
+    color: #edf5f5;
+  }
+  
+  
+  h2 {
+    margin: 0;/* changing the marging in head text 2 box, it's move a diagonal line, so if you changes it to 450px is half of the box. since we have make border box same for all px, width and height. Try it out */
+  }
+  nav {/* explaing how we make our menu going to the top placement on the website with margin, padding and border. Look at the (nav menu at the top)*/
+    position: fixed;/* the position of the menu. Can make it changes so it follower you or placement, try sticky or relative*/
+    top: 0; /*0 means we going to the top of the page, changing to 1 makes it go lower on the page*/
+    left: 0;
+    z-index: 9999; /* value of the z coordination, explaing placement towards the screen */
+    text-align: right; /* placement for the menu text, try center or left */
+    background-color: #ffffff; /* changing colour for the background for menu bar, try to set the value at something else*/
+    margin: 0;/* Changes the position for the nav section, try and changes 0 to another value in (px) */
+    /* em is part of relative lengths. so it's relative to another code. em is relative to font-size so when you use 2em. Means it's scales 2 times it's size to the relative font-size.*/
+    padding-top: 0.5em;/* changing padding border from the top to bottom with the text placement , if you give a higher value it will changes position in the padding. Try to changes value 0.5 to something bigger*/
+    padding-bottom: 1em;/*changing the padding bottom doing reverse thing of top. try and changes value to something else */ 
+    padding-right: 1em;/* changing the padding right to left. Try another value and see what will happened*/
+    font-weight: bold;/* changing the weight of the font, try out normal, thick or bolder to see it changes*/
+    /* changing the size of the meu bar, try and put another values in, try and reverse width and hight value %=px px=%*/
+    width: 100%;
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style-type: none; /* (trouble make it work) you can changes what icon will appear infront to table like, circle, square  and so. try it out*/
+    margin: 0; /* changing placement for the marging, if you try and use 10%, it changes it's placement,*/
+    padding-right: 2em; /* changing the padding right to left. Try another value and see what will happened*/
+    font-size: 1.2em; /* changing font-size try out another values */
+  }
+  nav li {
+    display: inline;/* it changes the behavior for redering box of different elements, inline have the proberty any height and width have no effects on it. try and use block and content. will recommend reading https://www.w3schools.com/CSSref/pr_class_display.php to test out all different property. Since it's hard to grasp it with on words */
+    padding-left: em;/* padding how close they are to each other, try and changes the value to 0 and 10*/
+  }
+  nav a {
+    text-decoration: none;/*decoration for the text try and put a overline or a underline, instead of none*/
+  }
+  nav a:link /* color for the link, changes it if you want to see what it will do*/ {
+    color: #3f2860;/* color for the link, changes it if you want to see what it will do*/
+  }
+  nav a:visited /* if you already have visited this link it will change to this color, changes color if you want see how it works */ {
+    color: #497777;
+  }
+
+  nav a:hover /* hover highligtning, with a color a text when your cursor interact with it, try and changes color and hover over it */ {
+    color: #a26100;
+  }
+  #loungehero  {
+    height: 300px;/* changing value of the height, try it out*/
+    background-image: url(img/yogalounge.png); /*background picture for the header section, try and put your picture in*/ 
+    background-size: 100% 100%;/* pictures size, so if you have a picture in a folder try and changes it to a lower/ higher%*/
+    background-repeat: no-repeat; /* so background don't repeat itself*/
+    clear: both;/* It specifies what will happen next with a float element next to it, both have property it will pushed below left and right floated elements, try out none or inherit */
+  }
+  footer/* focus gonna be at head text 2 box*/ {
+    font-size: small;/* changing font-size try out another values. small it's another way to speficefy  */
+    font-style: italic; /* font type alot different option for this, try and change it*/
+    text-align: center; /* placement of a property, try out left and right*/
+    clear: right; /*It specifies what will happen next with a float element next to it*/
+  }
+  li {
+    font-size: 90%;/* changing font-size try out another values.*/
+  }
+  .home {
+    height: 50vh;/* changing value of the height, try it out*/
+    /* Relative to 1% of the height of the viewport* */
+    padding-top: 3em;/* changing padding border from the top to bottom with the text placement , if you give a higher value it will changes position in the padding. Try to changes value 3 something smaller or bigger*/
+    padding-left: 8em; /* padding how close they are to each other, try and changes the value to 0 and 10*/
+    font-size: 120%;/* changing font-size try out another values.*/
+    min-height: 300px; /*min- and max is the pixal size*/
+  }
+  .content {
+    height: 250px; /* changing value of the height, try it out*/
+    padding-top: 2em; /*changing padding border from the top to bottom with the text placement , if you give a higher value it will changes position in the padding. Try to changes value 2 something smaller or bigger*/
+    padding-left: 8em; /* padding how close they are to each other, try and changes the value to 0 and 10*/
+    padding-bottom: 2em;/*changing the padding bottom doing reverse thing of top. try and changes value to something else */ 
+  }
+  
+  
+  .onethird {
+    float:left; /* changes value for left to right and see what it will do*/
+    width: 33%; /*changing width, if you changes it to 100% it filles the whole border */
+    padding-left: 2em; /* padding how close they are to each other, try and changes the value to 0 and 10*/
+    padding-right: 2em; /* changing the padding right to left. Try another value and see what will happened*/
+  }
+  
