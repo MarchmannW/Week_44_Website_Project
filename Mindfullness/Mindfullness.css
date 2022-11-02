@@ -1,0 +1,125 @@
+*{
+    box-sizing:border-box;
+}
+body{
+background-color: #e8e7e6;
+color: #737477;
+min-width: 1080px;
+max-width: 1920px;
+margin: 0;
+font-family:'Courier New', Courier, monospace';
+}
+nav {/* explaing how we make our menu going to the top placement on the website with margin, padding and border. Look at the (nav menu at the top)*/
+    position: static;/* the position of the menu. Can make it changes so it follower you or placement, try sticky or relative*/
+    z-index: 9999; /* value of the z coordination, explaing placement towards the screen */
+    /* changing the size of the meu bar, try and put another values in, try and reverse width and hight value %=px px=%*/
+    width: 100%;
+    height: 150px;
+    background-color: #dedad3;
+    /*border:1px solid #1c3737*/
+}
+nav img{
+  float: left;
+  height: 120px;
+  width: 120px;
+    
+}
+nav h1 {
+    margin: 0; /* changing placement for the marging, if you try and use 10%, it changes it's placement,*/
+    font-size: 2.0em; /* changing font-size try out another values */
+    float: left;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+    margin: 45px; /* changing placement for the marging, if you try and use 10%, it changes it's placement,*/
+    padding-right: 5px; /* changing the padding right to left. Try another value and see what will happened*/
+    font-size: 2em; /* changing font-size try out another values */
+    float: right;
+  }
+    nav li {
+        display: inline;/* it changes the behavior for redering box of different elements, inline have the proberty any height and width have no effects on it. try and use block and content. will recommend reading https://www.w3schools.com/CSSref/pr_class_display.php to test out all different property. Since it's hard to grasp it with on words */
+        padding-left: 2em;/* padding how close they are to each other, try and changes the value to 0 and 10*/
+  }
+  nav a {
+    text-decoration: none;/*decoration for the text try and put a overline or a underline, instead of none*/
+  }
+  nav a:link /* color for the link, changes it if you want to see what it will do*/ {
+    color: #737477;/* color for the link, changes it if you want to see what it will do*/
+  }
+  nav a:visited /* if you already have visited this link it will change to this color, changes color if you want see how it works */ {
+    color: #1c3737;
+  }
+
+  nav a:hover /* hover highligtning, with a color a text when your cursor interact with it, try and changes color and hover over it */ {
+    color: #41444e;
+  }
+header{
+    background-color: #dedad3;
+    height: 1000px;
+    width: 80%;
+    margin-inline:auto;
+    padding: 1%;
+    /*border: 1px solid #1c3737 ;*/
+}
+.headertext{
+    font-size: 1.5em;
+position: relative;
+left: 5%;
+top: 10px;
+}
+.headerpicture{
+    position:relative;
+    left: 35%;
+    top: 20px;
+
+}
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+  }
+  .row{
+    content:"";
+    clear: both;
+    display: table;
+  }
+header img{
+  height:40%;
+  width: 40%;
+  margin: 10px;
+  position: relative;
+  right: 40%;
+}
+section{
+  background-color: #dedad3;
+  height: 1000px;
+  width: 80%;
+  padding: 1%;
+  margin-inline:auto;
+  /*border: 1px solid #1c3737 ;*/
+}
+.sectiontext{
+  font-size: 1.5em;
+position: relative;
+left: 5%;
+top: 10px;
+}
+section img{
+  height: 80%;
+  width: 40%;
+  margin: 10px;
+  position: relative;
+  right: 5%;
+  float: right;
+  bottom: 20%;
+}
+
+footer{
+  /*border: 1px solid #1c3737 ;*/
+  background-color:#dedad3;
+  color: #737477;
+  text-align: center;
+  padding-top: 100px;
+}
